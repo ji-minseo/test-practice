@@ -51,3 +51,17 @@ System.out.println(b);
 삼항연산자
 int b = (5 < 4) ? 50 : 40; 
 (조건) ? 참일때 : 거짓일때;
+
+# 같은 성분으로 배열 초기화
+
+import java.util.Arrays;
+boolean bools[] = new boolean[n+1]; //1-n까지숫자 = 방번호
+Arrays.fill(bools, false);//아직 삭제안한 숫자들
+
+
+
+
+int nums[] = new int[n+1];
+      for(int i =0; i<n; i++) {
+          nums[i] = i+1;//1-n 까지의 배열 만들기
+      }
