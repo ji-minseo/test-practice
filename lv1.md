@@ -65,3 +65,42 @@ int nums[] = new int[n+1];
       for(int i =0; i<n; i++) {
           nums[i] = i+1;//1-n 까지의 배열 만들기
       }
+
+
+# 자바 문자열 자르기, 문자열비교
+
+//사용법
+String.substring(start) //문자열  start위치부터 끝까지 문자열 자르기
+String.substring(start,end) //문자열  start위치 부터 end전까지 문자열 발췌
+		
+
+//예제
+String str = "ABCDEFG"; //대상 문자열
+/*A=0 B=1 C=2 D=3 E=4 F=5 G=6의 index를 가진다.*/
+		
+str.substring(3); 
+/*substring(시작위치) 결과값 = DEFG*/
+
+str.substring(3, 6); 
+/*substring(시작위치,끝위치) 결과값 = DEF*/
+
+
+# 문자열비교
+s1.equals(s2); // > 같을경우 true
+
+s1.compareTo(s2); // > 같으면0, s1 > s2 -> 양수(긍정값)
+//s1 < s2 -> 음수 (부정값)
+
+
+# 문자열 
+
+
+# charAt 함수를 활용하여 단어를 char배열에 한글자씩 저장하기
+
+String word = "POWER"; //스트링 문자 POWER
+char[] array_word = new char[word.length()]; // 스트링을 담을 배열
+
+for(int i=0;i<array_word.length;i++){ 
+	array_word[i]=(word.charAt(i));//스트링을 한글자씩 끊어 배열에 저장
+	System.out.println(array_word[i]); //출력
+}
