@@ -54,14 +54,17 @@ public int deque() throws EmptyQueueException {//front로 꺼내기 -> 리턴값
 
 //큐에소 데이터를 피크 (프런트 데이터를 들여다봄)
 public int peek() throws EmptyQueueException {
+    if(num <= 0)
+        throw new EmptyQueueException();
     return que[front];
 }
 
 //큐에서 x를 검색하여 인덱스 (찾지 못하면 -1)를 반환
 public int indexOf(int x) {
     for (int i = 0; i < num; i++) {
-        if(que[i] == x)
-            return i;
+        int idx = (front+i) % max;
+        if(que[idx] == x)
+            return idx;
     }
     return -1;
 
@@ -93,8 +96,14 @@ public boolean isFull() {//가득 차있을시 true
 }
 // 큐 안의 모든 데이터를 프런트 -> 리어 순으로 출력
 public void dump() {
-    for (int i = front; i<rear; i++) {
-        System.out.println(que[i]);
+    if(num <= 0)
+        System.out.println("큐가 비어 있습니다.");
+    else {
+        for (int i = 0; i< num; i++) {
+        int idx = (front+i) % max;
+        System.out.println(que[idx]);
+        }
     }
+    
 
 }
