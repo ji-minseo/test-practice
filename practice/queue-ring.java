@@ -20,7 +20,7 @@ public class IntAryQueue {
 
 //생성자
 public IntAryQueue(int capacity) {
-    num, front, rear = 0; //프론트, 레어의 첫위치
+    num = front = rear = 0; //프론트, 레어의 첫위치
     max = capacity; //큐의 크기
     try {
         que = new int[max];
@@ -41,7 +41,7 @@ public int enque(int x) throws OverflowQueueException {//rear 로 넣기 - 리�
 }
 
 public int deque() throws EmptyQueueException {//front로 꺼내기 -> 리턴값이 꺼내진 값!
-    if(num == 0)
+    if(num <= 0)
         throw new EmptyQueueException();
     int x = que[front++];
     //front++;
