@@ -40,3 +40,22 @@ System.out.println(stack.peek()); //스택의 꼭대기 값을 반환한다.
 System.out.println(stack.search("value")); //값이 존재하면 1, 아니면 -1을 출력한다. 
 System.out.println(stack.isEmpty()); //스택이 비어있으면 true을 출력한다. 
 System.out.println(stack);			//[v1, v2]
+
+
+## 큐 만들기
+
+import java.util.LinkedList;
+import java.util.Queue;
+import java.util.Stack;
+
+Queue<String> queue = new LinkedList<String>();
+
+Queue<Integer> queue = new LinkedList<Integer>();
+
+queue.add("데이터-"); //큐에 데이터를 삽입한다.
+
+System.out.println(queue.peek()); //큐의 front가 가리키는 값을 반환한다.         데이터-0
+System.out.println(queue.poll()); //큐의 front가 가리키는 값을 반환하고 삭제한다.    데이터-0
+System.out.println(queue.isEmpty()); // false
+System.out.println(queue);			
+front = 0
