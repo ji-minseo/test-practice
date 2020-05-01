@@ -104,3 +104,65 @@ for(int i=0;i<array_word.length;i++){
 	array_word[i]=(word.charAt(i));//스트링을 한글자씩 끊어 배열에 저장
 	System.out.println(array_word[i]); //출력
 }
+
+
+# 문자열 배열에 담기
+
+String salesTeam = "홍길동,유관순,강감찬";
+String[] salesTeamArray = salesTeam.split(",");
+
+String[] array = str.split(" ");
+// 공백 기준으로 배열에 담기
+
+# 문자열 일부 제거
+
+String s  = "가나다라ABCDE 가나다라ABCDE"; // 원본 문자열
+String s2;
+
+// 문자열에서 모든 가나다라 다 지우기
+s2 = s.replace("가나다라", "");
+System.out.println("삭제(1): " + s2); // 출력 결과: ABCDE ABCDE
+
+// 첫번째 "가나다라"만 없애기
+s2 = s.replaceFirst("가나다라", "");
+System.out.println("삭제(2): " + s2); // 출력 결과: ABCDE 가나다라ABCDE
+
+// 문자열에서 모든 가나다라 다 지우기
+s2 = s.replaceAll("가나다라", "");
+System.out.println("삭제(3): " + s2); // 출력 결과: ABCDE ABCDE
+
+
+# 문자열 특정부분 자르기
+
+//1. 마지막 3글자 자르기
+String str = "ABCDEFG"; 
+String result = str.substring(str.length()-3, str.length());
+System.out.println(result)
+ //결과값EFG
+
+
+
+//2. 특정문자 이후의 문자열 제거
+String str = "ABCD/DEFGH";
+String result = str.substring(str.lastIndexOf("/")+1);
+System.out.println(result); 
+//결과값 DEFGH
+
+
+
+//3. 특정단어(부분)만 자르기
+String str = "바나나 : 1000원, 사과 : 2000원, 배 : 3000원";
+String target = "사과";
+int target_num = str.indexOf(target); 
+String result; result = str.substring(target_num,(str.substring(target_num).indexOf("원")+target_num));
+System.out.println(result+"원"); 
+//결과값 : 사과 : 2000원
+
+
+# 문자열 길이대로 정렬
+
+Arrays.sort(arr, new Comparator<String>(){
+	public int compare(String s1, String s2){
+		return Integer.compare(s1.length(), s2.length());//문자열 길이순 정렬
+	}
+});
