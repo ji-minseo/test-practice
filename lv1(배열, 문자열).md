@@ -94,6 +94,18 @@ s1.compareTo(s2); // > 같으면0, s1 > s2 -> 양수(긍정값)
 
 # 문자열 
 
+(.replace  -> 대체)
+(.substring -> 자르기 / (0-)
+ .indexOf -> 해당 문자열 위치 /
+ .length() -> 문자열 길이)
+
+
+.charAt(n) -> n번째 문자 (char) 반환 (0-)
+.split(".") -> 문자로 나눠 배열에 넣기
+.compareTo() -> 비교해서 더 사전순서로 앞인지 (양수 -> 앞스트링이 사전순서 뒤)
+
+.contains -> 포함하는가? (t/f)
+.equals -> 같은가? (t/f)
 
 # charAt 함수를 활용하여 단어를 char배열에 한글자씩 저장하기
 
