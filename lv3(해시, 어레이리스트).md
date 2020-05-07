@@ -19,6 +19,8 @@ ArrayList<Integer> arrayList = new ArrayList<>();
 
 ArrayList<String> al = new ArrayList<>();
 
+//al.get(1).charAt(1) - String형이 들어있는 al이라 자유롭게 string 함수 사용가능
+
 
 List al = new ArrayList();
 ArrayList al = new ArrayList();
