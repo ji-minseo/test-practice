@@ -19,8 +19,13 @@ ArrayList<Integer> arrayList = new ArrayList<>();
 
 ArrayList<String> al = new ArrayList<>();
 
+
 List al = new ArrayList();
 ArrayList al = new ArrayList();
+//이렇게 선언했을 땐 .toString 등으로 형변환해주어야함
+al.get(1).toString().charAt(0);
+al.get(1).toString().length();
+
 
 
 ### 값 추가
@@ -53,7 +58,3 @@ List<Integer> list = arrayList.subList(1,3);
 
 al.size();
 
-
-al.get(1).toString().charAt(0);
-al.get(1).toString().length();
-al.size();
