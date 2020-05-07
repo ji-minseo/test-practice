@@ -6,6 +6,8 @@
 
 ## ArrayList
 
+ArrayList는 크기를 미리 지정하지 않기 때문에 얼마든지 많은 수의 값을 저장할 수 있다
+
 import java.util.*
 
 import java.util.ArrayList
