@@ -17,6 +17,11 @@ for (int a = 0; a <commands.length; a++) {//세로 방만큼 내려가기
 
 ```
 
+### to string
+.toString();
+### to int
+Integer.parseInt("Value");
+
 # String to Char
 
 ```
