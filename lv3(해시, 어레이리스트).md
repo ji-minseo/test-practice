@@ -1,7 +1,41 @@
 ## Hash
 
-해쉬맵
-해쉬셋
+List(ArrayList , Vector , LinkedList )는 입력한 모든 값들이 저장 순서보장 X 
+
+Hash ( HashSet,LinkedHashSet , TreeSet ) 는 고유한 값만 저장. 순서보장 O 
+
+hashset->List와 다르게 중복 값은 저장되지 X 고유한 값만 저장. 
+
+리스트 : 순서가 있는 데이터의 집합, 데이터의 중복을 허용한다.
+
+
+해쉬맵 -> Map : 키(key)와 값(value)의 쌍으로 이루어진 데이터의 집합이다.
+
+ 순서는 유지되지 않고, 키는 중복을 허용하지 않으며 값의 중복을 허용한다.
+
+
+### HashSet
+
+해쉬셋 -> Set : 중복된 요소를 저장하지 않음 .순서를 유지하지 않는 데이터의 집합, 데이터의 중복을 허용하지 않는다.
+
+* 주로 겹치는 요소를 하나로 취급하는 문제의 경우, 해쉬셋 사용 *
+
+import java.util.HashSet;
+
+HashSet<Integer> hashSet = new HashSet<>();
+
+
+hashSet.add(i + 3); //데이터 추가
+
+if(hashSet.contains(CONTAINS_ELEMENT))
+
+hashSet.isEmpty() //데이터 있는지 확인
+
+remove(Object o) //특정 데이터 제거
+
+clear() // 데이터 전부 삭제
+
+
 
 
 https://edu.goorm.io/learn/lecture/41/%EB%B0%94%EB%A1%9C%EC%8B%A4%EC%8A%B5-%EC%83%9D%ED%99%9C%EC%BD%94%EB%94%A9-%EC%9E%90%EB%B0%94-java/lesson/39156/arraylist%EC%9D%98-%EC%82%AC%EC%9A%A9%EB%B2%95
@@ -84,3 +118,9 @@ for (String temp : ary ) {
 for(int i = 0; i < al.size(); i++) {
     answer[i] = al.get(i);
 }
+
+
+
+### 반복자
+
+import java.util.Iterator;
