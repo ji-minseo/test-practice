@@ -66,3 +66,19 @@ List<Integer> list = arrayList.subList(1,3);
 
 al.size();
 
+### foreach 문
+
+배열 전체를 다 순회할 필요가 있을때 사용, 인덱스 접근시는 사용x
+(배열 전체를 돌며 한 배열 성분씩 문자열로 잘라 처리할때)
+
+for (String temp : ary ) {
+    // System.out.println(temp);
+    String [] str = temp.split(",");
+    }
+}
+
+(배열내 성분에 [i]로 직접 접근할때)
+
+for(int i = 0; i < al.size(); i++) {
+    answer[i] = al.get(i);
+}
