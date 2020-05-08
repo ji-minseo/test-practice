@@ -186,3 +186,13 @@ Arrays.sort(arr, new Comparator<String>(){
 		return Integer.compare(s1.length(), s2.length());//문자열 길이순 정렬
 	}
 });
+
+
+## 문자열들을 담은 배열에서 한줄의 문자열 또 나눠서 해당 문자열만 배열로 다루기
+
+for(String temp : arr) {
+    String [] val = temp.split(",");
+    //이런식으로 포문 안에서 String [] 선언해서 그때만 넣어줌
+    -> 그러면 해당 포문이 도는 동안엔 해당 줄만 갖고 생각 가능
+    }
+}

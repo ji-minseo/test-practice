@@ -4,6 +4,8 @@
 해쉬셋
 
 
+https://edu.goorm.io/learn/lecture/41/%EB%B0%94%EB%A1%9C%EC%8B%A4%EC%8A%B5-%EC%83%9D%ED%99%9C%EC%BD%94%EB%94%A9-%EC%9E%90%EB%B0%94-java/lesson/39156/arraylist%EC%9D%98-%EC%82%AC%EC%9A%A9%EB%B2%95
+
 ## ArrayList
 
 ArrayList는 크기를 미리 지정하지 않기 때문에 얼마든지 많은 수의 값을 저장할 수 있다
@@ -48,10 +50,14 @@ arrayList.addAll(arrayList2);
 arrayList.remove(1);
 arrayList.remove("value");
 
+### 전체 삭제
+ArrayList.clear();
+
 ### 특정 값 가져오기
 
 al.get(1); -> 1번인덱스값 가져오기
 al.contains("value"); -> 이 값 있는지 검색하기
+무언가 있는지 없는지 확인할때 유용하게 사용가능
 
 List<Integer> list = arrayList.subList(1,3);
  1-2번 방 가져옴 (1번방부터, 3번방 전까지)
