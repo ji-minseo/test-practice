@@ -113,6 +113,12 @@ for (String temp : ary ) {
     }
 }
 
+HashSet<String> hs = new HashSet<>();
+        
+        for (String gem : gems) {
+            hs.add(gem);
+        }
+
 (배열내 성분에 [i]로 직접 접근할때)
 
 for(int i = 0; i < al.size(); i++) {
